@@ -1,0 +1,28 @@
+{
+  "name": "est_fe_13_1st_project",
+  "version": "1.0.0",
+  "description": "이 프로젝트는 이스트소프트 교육 모집 웹페이지의 메인페이지를 리뉴얼한 프로젝트입니다.\r <br>\r <br>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bohem026/est_fe_13_1st_project_clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/bohem026/est_fe_13_1st_project_clone/issues"
+  },
+  "homepage": "https://github.com/bohem026/est_fe_13_1st_project_clone#readme",
+  "dependencies": {
+    "axios": "^1.18.1",
+    "playwright": "^1.61.0"
+  }
+}
