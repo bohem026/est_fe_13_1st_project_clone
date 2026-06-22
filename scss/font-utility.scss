@@ -1,0 +1,82 @@
+/* ============================================================================================
+   Typography System
+   ============================================================================================ */
+
+@mixin set-font($size, $family: 'Roboto', $weight: 400, $lh: 27px, $transform: null) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lh;
+
+  @if $transform {
+    text-transform: $transform;
+  }
+}
+
+.text-link-s {
+  @include set-font(var(--font-link-s), $weight: bold, $lh: var(--base-row-unit), $transform: uppercase);
+}
+
+.text-link-m {
+  @include set-font(var(--font-link-m), $weight: bold, $lh: var(--base-row-unit), $transform: uppercase);
+}
+
+.text-body-s-auto {
+  @include set-font(var(--font-body-s-auto-upper), $lh: normal);
+}
+
+.text-body-s-auto-upper {
+  @include set-font(var(--font-body-s-auto-upper), $lh: normal, $transform: uppercase);
+}
+
+.text-body-s-plus {
+  @include set-font(var(--font-body-s-plus), $lh: var(--base-row-unit));
+}
+
+.text-body-s-plus-auto {
+  @include set-font(var(--font-body-s-plus-auto), $lh: normal);
+}
+
+.text-body-m {
+  @include set-font(var(--font-body-m), $lh: var(--base-row-unit));
+}
+
+.text-body-m-plus {
+  @include set-font(var(--font-body-m-plus), $lh: var(--base-row-unit));
+}
+
+.text-body-m-plus-2 {
+  @include set-font(var(--font-body-m-plus-2), $lh: var(--base-row-unit));
+}
+
+.text-body-m-plus-2-upper {
+  @include set-font(var(--font-body-m-plus-2-upper), $lh: var(--base-row-unit), $transform: uppercase);
+}
+
+.text-body-l {
+  @include set-font(var(--font-body-l), $lh: calc(var(--base-row-unit) * 2));
+}
+
+.text-body-icon-m {
+  @include set-font(var(--font-body-icon-m), $lh: var(--base-row-unit));
+}
+
+.text-body-icon-l {
+  @include set-font(var(--font-body-icon-l), $lh: var(--base-row-unit));
+}
+
+.text-heading-s {
+  @include set-font(var(--font-heading-s), $weight: bold, $lh: calc(var(--base-row-unit) * 2));
+}
+
+.text-heading-m {
+  @include set-font(var(--font-heading-m), $weight: bold, $lh: calc(var(--base-row-unit) * 2));
+}
+
+.text-heading-l {
+  @include set-font(var(--font-heading-l), $weight: bold, $lh: calc(var(--base-row-unit) * 2));
+}
+
+.text-heading-xl {
+  @include set-font(var(--font-heading-xl), $weight: bold, $lh: calc(var(--base-row-unit) * 3));
+}

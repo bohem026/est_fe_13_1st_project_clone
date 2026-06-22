@@ -1,117 +1,125 @@
 /* ============================================================================================
-   Typography System (폰트 및 텍스트 스타일 시스템)
-   ============================================================================================
-   이 파일은 프로젝트에서 사용되는 폰트 크기, 행간(line-height), 
-   폰트 두께, 텍스트 변형을 정의하는 스타일시트입니다.
-
-   [구성 및 연산 기준]
-   1. 폰트 크기 (font-size)
-      - 기준값: --base-font (기본값: 16px)
-      - 연산 방식: 기준값을 기준으로 rem 또는 calc()를 사용하여 비율(비례식)로 크기를 계산합니다.
-   
-   2. 행 높이 (line-height)
-      - 기준값: --base-row-unit (기본값: 27px)
-      - 연산 방식: 기준값을 배수로 연산하여 일정한 그리드(Line Grid)를 유지합니다.
-      - 예외 사항: Auto는 브라우저 기본값(normal)을 따릅니다.
-
-   3. 텍스트 변형 (text-transform)
-      - Upper가 포함된 스타일은 자동으로 텍스트를 대문자로 변환합니다 (text-transform: uppercase).
-   
-   [사용 방법]
-   - 해당 스타일 시트에 정의된 `.text-*` 유틸리티 클래스를 사용하여 일관된 텍스트 스타일을 적용합니다.
+   Typography System
    ============================================================================================ */
-
 .text-link-s {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-link-s);
-  line-height: var(--base-row-unit);
   font-weight: bold;
+  line-height: var(--base-row-unit);
   text-transform: uppercase;
 }
 
 .text-link-m {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-link-m);
-  line-height: var(--base-row-unit);
   font-weight: bold;
+  line-height: var(--base-row-unit);
   text-transform: uppercase;
 }
 
-.text-body-s-auto{
+.text-body-s-auto {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-s-auto-upper);
+  font-weight: 400;
   line-height: normal;
 }
 
 .text-body-s-auto-upper {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-s-auto-upper);
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
 
 .text-body-s-plus {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-s-plus);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-body-s-plus-auto {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-s-plus-auto);
+  font-weight: 400;
   line-height: normal;
 }
 
 .text-body-m {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-m);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-body-m-plus {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-m-plus);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-body-m-plus-2 {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-m-plus-2);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-body-m-plus-2-upper {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-m-plus-2-upper);
+  font-weight: 400;
   line-height: var(--base-row-unit);
   text-transform: uppercase;
 }
 
 .text-body-l {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-l);
+  font-weight: 400;
   line-height: calc(var(--base-row-unit) * 2);
 }
 
 .text-body-icon-m {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-icon-m);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-body-icon-l {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-body-icon-l);
+  font-weight: 400;
   line-height: var(--base-row-unit);
 }
 
 .text-heading-s {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-heading-s);
-  line-height: calc(var(--base-row-unit) * 2);
   font-weight: bold;
+  line-height: calc(var(--base-row-unit) * 2);
 }
 
 .text-heading-m {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-heading-m);
-  line-height: calc(var(--base-row-unit) * 2);
   font-weight: bold;
+  line-height: calc(var(--base-row-unit) * 2);
 }
 
 .text-heading-l {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-heading-l);
-  line-height: calc(var(--base-row-unit) * 2);
   font-weight: bold;
+  line-height: calc(var(--base-row-unit) * 2);
 }
 
 .text-heading-xl {
+  font-family: "Roboto", sans-serif;
   font-size: var(--font-heading-xl);
-  line-height: calc(var(--base-row-unit) * 3);
   font-weight: bold;
+  line-height: calc(var(--base-row-unit) * 3);
 }

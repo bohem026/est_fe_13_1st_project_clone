@@ -1,0 +1,78 @@
+/* ============================================================================================
+   Common & Global Styles
+   ============================================================================================ */
+@use 'font-utility' as font;
+@use "flex-utility";
+@import 'normalize.css';
+@import 'reset.css';
+
+:root {
+  --base-font: 16px;
+  --base-row-unit: 27px;
+  --base-col-unit: 24px;
+
+  /* Color Palette */
+  --color-black: #0b0e14;
+  --color-light-black: #161b22;
+  --color-gray: #353941;
+  --color-light-gray: #9c9c9c;
+  --color-light-gray-low-transparency: rgba(110, 110, 110, 0.15);
+  --color-super-light-gray: #cfcfcf;
+  --color-icon-gray: #8b9491;
+  --color-navy: #101a2b;
+  --color-primary: #0c4db6;
+  --color-primary-low-transparency: rgba(12, 77, 182, 0.15);
+  --color-light-primary: #7da8ec;
+  --color-light-primary-low-transparency: rgba(47, 104, 197, 0.15);
+  --color-white: #f0f6fc;
+  --color-white-low-transparency: rgba(240, 246, 252, 0.15);
+  --color-red: #e99797;
+  --color-red-low-transparency: rgba(198, 90, 90, 0.15);
+  --color-transparent: rgba(255, 255, 255, 0);
+  --color-roadmap-card-1: #286dd4;
+  --color-roadmap-card-2: #1e5fc0;
+  --color-roadmap-card-3: #1254bb;
+  --color-roadmap-card-4: #0c4db6;
+
+  /* Font Size Scale */
+  --font-link-s: calc(var(--base-font) * 0.875);
+  --font-link-m: var(--base-font);
+  --font-body-s-auto-upper: calc(var(--base-font) * 0.75);
+  --font-body-s-plus: calc(var(--base-font) * 0.875);
+  --font-body-s-plus-auto: calc(var(--base-font) * 0.875);
+  --font-body-m: var(--base-font);
+  --font-body-m-plus: calc(var(--base-font) * 1.125);
+  --font-body-m-plus-2: calc(var(--base-font) * 1.25);
+  --font-body-m-plus-2-upper: calc(var(--base-font) * 1.5);
+  --font-body-l: calc(var(--base-font) * 1.6875);
+  --font-body-icon-m: var(--base-font);
+  --font-body-icon-l: calc(var(--base-font) * 1.6875);
+  --font-heading-s: calc(var(--base-font) * 1.875);
+  --font-heading-m: calc(var(--base-font) * 2);
+  --font-heading-l: calc(var(--base-font) * 3);
+  --font-heading-xl: calc(var(--base-font) * 3.4375);
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+
+  @include font.set-font($size: var(--base-font), $family: 'Roboto', $weight: 400, $lh: var(--base-row-unit));
+}
+
+.container {
+  max-width: 1272px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 var(--base-col-unit);
+  box-sizing: border-box;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}

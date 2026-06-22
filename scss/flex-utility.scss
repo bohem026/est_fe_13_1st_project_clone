@@ -1,0 +1,33 @@
+.display-flex {
+	display: flex;
+}
+.display-none {
+	display: none;
+}
+.invisible {
+	background: var(--color-transparent);
+}
+.flex-column {
+	flex-direction: column;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+.align-items-center {
+	align-items: center;
+}
+.row-gap-1 {
+	gap: var(--base-row-unit);
+}
+.row-gap-2 {
+	gap: calc(var(--base-row-unit) * 2);
+}
+.col-gap-1 {
+	gap: var(--base-col-unit);
+}
+.text-center {
+	text-align: center;
+}
